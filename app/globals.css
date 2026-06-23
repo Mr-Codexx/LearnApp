@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --grad-start: #3fcbff;
+  --grad-end: #7fe3ff;
+  --accent: #0e7bb8;
+  --pill-active: #1ea7e0;
+}
+
+[data-theme="violet"] {
+  --grad-start: #7b2ff7;
+  --grad-end: #a65bfa;
+  --accent: #5a1ec9;
+  --pill-active: #8b3df0;
+}
+
+html,
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #eef1f6;
+}
+
+.font-display {
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+.bg-theme-gradient {
+  background: linear-gradient(165deg, var(--grad-start) 0%, var(--grad-end) 55%, #ffffff 100%);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-pill-active {
+  background: var(--pill-active);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
